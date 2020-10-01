@@ -4,7 +4,7 @@ Example script to detect objects by color from an image using OpenCV.
 import numpy as np
 import cv2
 from utils.ecore_utils import image_to_center_points
-from utils.video_source import select_video_source
+from utils.select_video_source import select_video_source
 
 
 # Select the camera source by setting this

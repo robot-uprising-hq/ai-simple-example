@@ -6,7 +6,7 @@ import numpy as np
 import cv2
 from cv2 import aruco
 from utils.aruco_utils import aruco_poses_to_transforms
-from utils.video_source import select_video_source
+from utils.select_video_source import select_video_source
 
 
 # Select the camera source by setting this

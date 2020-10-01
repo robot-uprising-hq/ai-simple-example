@@ -1,5 +1,5 @@
 import cv2
-from gstreamer_video_source import GStreamerVideoSource
+from utils.gstreamer_video_source import GStreamerVideoSource
 
 
 def select_video_source(selection):
@@ -17,4 +17,5 @@ def select_video_source(selection):
             return frame
         return get_image
     else:
-        raise Exception("Unknown video source")
+        raise Exception(f"Unknown video source, got: {selection}, "
+                        f"but expected either 'gstreamer' or 'webcam'")

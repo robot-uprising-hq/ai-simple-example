@@ -12,12 +12,32 @@ This repo has example code showing how to get started with:
 ## Prequisites
 
 - python3
+- Pip3
+- Python virtualen
 - Git
 - Webcam or Raspberry Pi Camera module
+- Gstreamer on your PC if you use Raspberry Pi Camera module
 
 ## Downloading the files
 
-Download and install this repo and its Python dependencies using the installation scripts in [AI Guide repo](https://github.com/robot-uprising-hq/ai-guide)
+The following works on Ubuntu and Mac.
+
+Download and install this repo and its Python dependencies using the installation scripts in [AI Guide repo](https://github.com/robot-uprising-hq/ai-guide).
+
+You can also use the following commands to do the same. Note that using virtual environment to isolate the Python environment is not mandatory but considered as a good practise.
+```sh
+git clone https://github.com/robot-uprising-hq/ai-simple-example.git
+virtualenv venv
+source venv/bin/activate
+pip3 install -r requirements.txt
+```
+
+To use the AI Video Streamer's video stream you need to install Gstreamer to your PC and link the `gi`-package to your virtual environment. You can make the installation and create the symbolic link with the `install-gstreamer.sh`-script.
+
+```sh
+chmod +x install-gstreamer.sh
+./install-gstreamer.sh
+```
 
 # Usage
 ## Aruco marker detection
