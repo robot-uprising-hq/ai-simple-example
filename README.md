@@ -35,13 +35,6 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 ```
 
-To use the AI Video Streamer's video stream you need to install Gstreamer to your PC and link the `gi`-package to your virtual environment. You can make the installation and create the symbolic link with the `install-gstreamer.sh`-script.
-
-```sh
-chmod +x install-gstreamer.sh
-./install-gstreamer.sh
-```
-
 ## Usage
 
 ### Aruco marker detection
@@ -86,4 +79,12 @@ When starting to read the video stream the FFmpeg library will print the followi
 
 ### Gstreamer video source
 Gstreamer is a bit hard to set to Windows so it might be better to use the `ffmpeg` or `webcam` options.
+
+To use the `gstreamer_video_source.py` as video stream you need to install Gstreamer to your PC and link the `gi`-package to your virtual environment. You can make the installation and create the symbolic link with the `install-gstreamer.sh`-script.
+
+```sh
+chmod +x install-gstreamer.sh
+./install-gstreamer.sh
+```
+
 If you use Raspberry Pi camera module to as the video source see the [AI Video Streamer Repo](https://github.com/robot-uprising-hq/ai-video-streamer) for how to set it up.
