@@ -1,9 +1,9 @@
 import cv2
-from utils.gstreamer_video_source import GStreamerVideoSource
-from utils.ffmpeg_video_source import FFMpegVideoSource
+
 
 def select_video_source(selection):
     if selection == 'gstreamer':
+        from utils.gstreamer_video_source import GStreamerVideoSource
         image_source = GStreamerVideoSource()
 
         def get_image():
@@ -17,6 +17,7 @@ def select_video_source(selection):
             return frame
         return get_image
     elif selection == 'ffmpeg':
+        from utils.ffmpeg_video_source import FFMpegVideoSource
         image_source = FFMpegVideoSource()
 
         def get_image():
