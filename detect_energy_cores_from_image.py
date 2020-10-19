@@ -8,7 +8,7 @@ from utils.select_video_source import select_video_source
 
 
 # Select the camera source by setting this
-VIDEO_SOURCE = "gstreamer"  # Options: 'gstreamer' or 'webcam'
+VIDEO_SOURCE = "ffmpeg"  # Options: 'gstreamer', 'webcam' or 'opencv'
 
 # Low and High values in HSV-colorspace for detecting color range.
 # See the these articles to understand more about HSV-colorspace:

@@ -10,7 +10,7 @@ from utils.select_video_source import select_video_source
 
 
 # Select the camera source by setting this
-VIDEO_SOURCE = "gstreamer"  # Options: 'gstreamer' or 'webcam'
+VIDEO_SOURCE = "ffmpeg"  # Options: 'gstreamer', 'webcam' or 'opencv'
 
 ARUCO_DICT = aruco.Dictionary_get(aruco.DICT_4X4_50)
 ARUCO_DETECTER_PARAMETERS = aruco.DetectorParameters_create()
