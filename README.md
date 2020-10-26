@@ -30,6 +30,7 @@ You can also use the following commands to do the same. Note that using virtual 
 
 ```sh
 git clone https://github.com/robot-uprising-hq/ai-simple-example.git
+cd ai-simple-example
 virtualenv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
